@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+    <h1>Purchase Data (Day)</h1>
+    {{ graph1|safe }}
+
+    <h1>Purchase Data (Mon)</h1>
+    {{ graph2|safe }}
+
+    <h1>Purchase Data (Year)</h1>
+    {{ graph3|safe }}
+
+    <h1>Purchase Data</h1>
+    {{ graph_purchase|safe }}
+{% endblock content %}

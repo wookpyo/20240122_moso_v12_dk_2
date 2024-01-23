@@ -1,0 +1,46 @@
+{% load static %}
+{% url 'purchase:purchase_main' as purchase_main %}
+{% url 'purchase:purchase_UploadExcelForm' as purchase_UploadExcelForm %}
+{% url 'sales:sales_main' as sales_main %}
+{% url 'sales:sales_UploadExcelForm' as sales_UploadExcelForm %}
+{% url 'wp:wp_main' as wp_main %}
+{% url 'sales:sales_UploadExcelForm' as sales_UploadExcelForm %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Purchase
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{{purchase_main}}">purchase_main</a></li>
+                        <li><a class="dropdown-item" href="{{purchase_UploadExcelForm}}">purchase_UploadExcelForm</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sales
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{{sales_main}}">sales_main</a></li>
+                        <li><a class="dropdown-item" href="{{sales_UploadExcelForm}}">sales_UploadExcelForm</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      wp
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{{sales_main}}">wp_main</a></li>
+                      <li><a class="dropdown-item" href="{{sales_UploadExcelForm}}">wp_upload_excel</a></li>
+                  </ul>
+              </li>
+            </ul>
+        </div>
+    </div>
+</nav>
